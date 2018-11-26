@@ -26,7 +26,7 @@ djangorestframework==3.3.2
 # The registration app is a little out of date - get it from the repo direct....
 # django-registration
 -e git+git://github.com/ubernostrum/django-registration@af917d4936973820fa1be2336db3ca922d27b89d#egg=django-registration
-django-registration-defaults==0.3
+django-registration-defaults==0.4.4
 
 ### Pombola dependencies
 sorl-thumbnail==12.3

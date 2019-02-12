@@ -112,7 +112,7 @@ pygeocoder==1.2.5
 # Dependencies of our dependencies
 Django-Select2==4.3.2
 Shapely==1.5
-WebOb==1.4
+WebOb==1.8.5
 amqp==1.4.6
 anyjson==0.3.3
 audioread==1.0.3

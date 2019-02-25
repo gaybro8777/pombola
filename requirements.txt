@@ -100,7 +100,7 @@ python-dateutil==2.4.2
 # Packages that are helpful for development:
 coverage==3.7.1
 django-debug-toolbar==1.4
-django-extensions==1.7.4
+django-extensions==2.1.6
 
 ## votematch
 django-model-utils==2.3.1

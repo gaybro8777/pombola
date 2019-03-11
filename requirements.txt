@@ -98,7 +98,7 @@ mysociety-django-images==0.0.6
 python-dateutil==2.4.2
 
 # Packages that are helpful for development:
-coverage==3.7.1
+coverage==4.5.3
 django-debug-toolbar==1.4
 django-extensions==1.7.4
 

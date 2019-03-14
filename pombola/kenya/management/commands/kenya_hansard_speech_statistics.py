@@ -82,9 +82,16 @@ class Command(BaseCommand):
         for k, v in results.items():
             count = len(v)
             if count > 1:
-                fmt = "Multiple {0} memberships found for {1}: {2}"
-                message = fmt.format(k, speaker, v)
-                raise MultipleMembershipsException, message
+                if k == 'party_membership':
+                    fmt = u"- [ ] [{0}](http://info.mzalendo.com{1}) ({2})"
+                    message = fmt.format(speaker, speaker.get_admin_url(), ', '.join(v))
+                    # raise MultipleMembershipsException, message
+                    print(message.encode('utf-8'))
+                    results[k] = 'ERROR: Multiple'
+                else:
+                    fmt = "Multiple {0} memberships found for {1}: {2}"
+                    message = fmt.format(k, speaker, v)
+                    raise MultipleMembershipsException, message
             elif count == 1:
                 results[k] = v[0]
             else:
@@ -162,7 +169,7 @@ class Command(BaseCommand):
             for speaker in representatives:
                 speech_count = speech_counts.get(speaker.id, 0)
 
-                print "speaker:", speaker, "speeches:", speech_count
+                # print "speaker:", speaker, "speeches:", speech_count
 
                 # Look for political positions occupied mid-way through
                 # the date range:

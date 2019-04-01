@@ -80,7 +80,7 @@ django-selenium==0.9.7
 BeautifulSoup==3.2.1
 beautifulsoup4==4.3.2
 Unidecode==0.04.16
-python-memcached==1.53
+python-memcached==1.59
 
 # django-mapit
 -e git+git://github.com/mysociety/mapit@d692d2788167516a9963563937bb8ed8a0e475e1#egg=django-mapit

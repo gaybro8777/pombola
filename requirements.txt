@@ -110,7 +110,7 @@ parsedatetime==1.4
 pygeocoder==1.2.5
 
 # Dependencies of our dependencies
-Django-Select2==4.3.2
+Django-Select2==7.0.3
 Shapely==1.5
 WebOb==1.4
 amqp==1.4.6
